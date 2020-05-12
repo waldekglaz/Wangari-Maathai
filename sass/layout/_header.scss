@@ -54,6 +54,7 @@ header {
         transform: translateY(-400px);
         opacity: 0;
         transition: transform .8s linear, opacity 1.2s;
+        z-index: 3;
 
         @include tablet {
             transform: translateY(0);
