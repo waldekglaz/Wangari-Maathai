@@ -1,0 +1,24 @@
+.hero {
+    background-color: $dark-green;
+    color: $white;
+
+    .image-container {
+        img {
+            width: 100%;
+        }
+    }
+
+    .hero-text-content {
+        padding: 20px;
+
+        .title {
+            font-family: $heading;
+            margin-bottom: 20px;
+        }
+
+        .paragraph {
+            line-height: 1.5;
+        }
+    }
+
+}

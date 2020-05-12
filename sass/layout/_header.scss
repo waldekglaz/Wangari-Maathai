@@ -1,0 +1,123 @@
+header {
+    background-color: $white;
+    padding: 20px;
+    position: relative;
+
+
+
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+    }
+
+    @include desktop {
+        padding: 30px 140px;
+    }
+
+    .fa-bars {
+        position: absolute;
+        right: 20px;
+        font-size: 2rem;
+        color: $dark-green;
+        top: 15px;
+
+        @include tablet {
+            display: none;
+        }
+
+    }
+
+
+    .logo {
+        color: $orange;
+        font-family: $heading;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 1.25rem;
+
+        @include desktop {
+            font-size: 2rem;
+        }
+    }
+
+    nav {
+        background-color: $white;
+        height: 300px;
+        text-align: center;
+        position: absolute;
+        left: 0;
+        right: 0;
+        padding-top: 40px;
+        margin-top: 10px;
+        transform: translateY(-400px);
+        opacity: 0;
+        transition: transform .8s linear, opacity 1.2s;
+
+        @include tablet {
+            transform: translateY(0);
+            position: static;
+            opacity: 1;
+            height: auto;
+            padding: 0;
+            margin: 0;
+            transition: none;
+        }
+
+        .fa-times-circle {
+            position: absolute;
+            right: 20px;
+            font-size: 2rem;
+            color: $dark-green;
+            top: -35px;
+
+            @include tablet {
+                display: none;
+            }
+
+        }
+
+        ul {
+            @include tablet {
+                display: flex;
+                align-items: center;
+            }
+
+            li {
+                margin-bottom: 30px;
+                height: 100%;
+
+                @include tablet {
+                    margin-right: 10px;
+                    margin-bottom: 0;
+                }
+
+                a {
+                    color: $dark-green;
+                    text-transform: uppercase;
+                    transition: .3s;
+                    font-weight: 700;
+
+                    &:hover {
+                        background-color: $dark-green;
+                        color: $white;
+                    }
+
+                    @include tablet {
+                        padding: 8px 12px;
+                        font-size: 0.75rem;
+                    }
+
+
+                }
+            }
+        }
+
+    }
+
+    nav.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
