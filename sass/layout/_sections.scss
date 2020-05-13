@@ -2,11 +2,15 @@
     background-color: $light-green;
     padding: 60px 20px;
 
-    @include tablet {
+    @include min-600px {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         padding-top: 100px;
+    }
+
+    @include min-1920px {
+        padding: 100px 100px 60px;
     }
 
     .card {
@@ -14,13 +18,17 @@
         color: $dark-green;
         text-align: center;
 
-        @include tablet {
+        @include min-600px {
             flex-basis: 45%;
         }
 
         @include desktop {
             flex-basis: 25%;
             text-align: left;
+        }
+
+        @include min-1920px {
+            flex-basis: 15%;
         }
 
         .card-image {

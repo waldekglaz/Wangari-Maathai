@@ -176,7 +176,7 @@ header nav.active {
 
 @media (min-width: 768px) {
   .hero {
-    padding: 60px 0;
+    padding: 70px 0;
   }
 }
 
@@ -194,22 +194,64 @@ header nav.active {
   }
 }
 
-.hero .image-container img {
+@media (min-width: 1920px) {
+  .hero .image-container {
+    left: 200px;
+  }
+}
+
+.hero .image-container .wangari {
   width: 100%;
   -webkit-filter: sepia(50%);
           filter: sepia(50%);
 }
 
+@media (min-width: 600px) {
+  .hero .image-container .wangari {
+    height: 500px;
+  }
+}
+
 @media (min-width: 768px) {
-  .hero .image-container img {
+  .hero .image-container .wangari {
     height: 450px;
     width: 150%;
   }
 }
 
 @media (min-width: 1024px) {
-  .hero .image-container img {
+  .hero .image-container .wangari {
     width: 200%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero .image-container .wangari {
+    width: 250%;
+    height: 600px;
+  }
+}
+
+.hero .image-container .wave {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .hero .image-container .wave {
+    display: block;
+    position: absolute;
+    width: 120px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -120%;
+    z-index: 3;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero .image-container .wave {
+    right: -180%;
   }
 }
 
@@ -232,6 +274,12 @@ header nav.active {
   }
 }
 
+@media (min-width: 1920px) {
+  .hero .image-container::before {
+    right: -145%;
+  }
+}
+
 .hero .hero-text-content {
   padding: 20px;
 }
@@ -241,6 +289,12 @@ header nav.active {
     width: 50%;
     margin: 0 0 0 auto;
     padding-left: 60px;
+  }
+}
+
+@media (min-width: 824px) {
+  .hero .hero-text-content {
+    padding-bottom: 100px;
   }
 }
 
@@ -268,10 +322,24 @@ header nav.active {
   }
 }
 
+@media (min-width: 1920px) {
+  .hero .hero-text-content .title {
+    font-size: 4.5rem;
+    width: 40%;
+    line-height: 1.5;
+  }
+}
+
 .hero .hero-text-content .paragraph {
   line-height: 1.7;
   color: #bfd9cc;
-  width: 65%;
+  width: 80%;
+}
+
+@media (min-width: 1920px) {
+  .hero .hero-text-content .paragraph {
+    width: 45%;
+  }
 }
 
 .section-1 {
@@ -279,7 +347,7 @@ header nav.active {
   padding: 60px 20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .section-1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -293,13 +361,19 @@ header nav.active {
   }
 }
 
+@media (min-width: 1920px) {
+  .section-1 {
+    padding: 100px 100px 60px;
+  }
+}
+
 .section-1 .card {
   margin-bottom: 60px;
   color: #4b787a;
   text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   .section-1 .card {
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
@@ -311,6 +385,13 @@ header nav.active {
     -ms-flex-preferred-size: 25%;
         flex-basis: 25%;
     text-align: left;
+  }
+}
+
+@media (min-width: 1920px) {
+  .section-1 .card {
+    -ms-flex-preferred-size: 15%;
+        flex-basis: 15%;
   }
 }
 
@@ -344,5 +425,43 @@ header nav.active {
   .section-1 .card p {
     padding: 0 15px;
   }
+}
+
+.grid .timeline {
+  background-color: #f5f4ed;
+  padding: 60px 20px 20px;
+}
+
+.grid .timeline h2 {
+  font-family: "Chonburi", cursive;
+  color: #4b787a;
+  margin-bottom: 30px;
+}
+
+.grid .timeline ul {
+  padding-left: 20px;
+}
+
+.grid .timeline ul li {
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.grid .timeline ul li span {
+  font-family: "Chonburi", cursive;
+  font-size: 1.25rem;
+  position: relative;
+}
+
+.grid .timeline ul li span::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background-color: #bfd9cc;
+  position: absolute;
+  left: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
 }
 /*# sourceMappingURL=style.css.map */

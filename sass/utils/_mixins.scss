@@ -1,3 +1,11 @@
+@mixin min-600px {
+    @media(min-width:600px) {
+        @content;
+    }
+}
+
+;
+
 @mixin tablet {
     @media(min-width:768px) {
         @content;
@@ -6,8 +14,24 @@
 
 ;
 
+@mixin min-824px {
+    @media(min-width:824px) {
+        @content;
+    }
+}
+
+;
+
 @mixin desktop {
     @media(min-width:1024px) {
+        @content;
+    }
+}
+
+;
+
+@mixin min-1920px {
+    @media(min-width:1920px) {
         @content;
     }
 }
