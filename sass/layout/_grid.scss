@@ -122,4 +122,38 @@
         }
 
     }
+
+    // books
+    .books {
+        background-color: $dark-green;
+        padding: 60px 20px 20px;
+
+        h2 {
+            color: $white;
+            font-family: $heading;
+            margin-bottom: 60px;
+        }
+
+        .books-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            color: $light-green;
+
+            .book {
+                flex-basis: 40%;
+                margin-bottom: 30px;
+                font-weight: 400;
+            }
+
+            img {
+                filter: grayscale(100%) sepia(30%);
+                width: 100%;
+                height: 180px;
+                margin-bottom: 10px;
+            }
+        }
+
+
+    }
 }
