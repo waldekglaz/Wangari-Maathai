@@ -40,4 +40,86 @@
 
 
     }
+
+    .quotes {
+        .quote {
+
+
+            img {
+                width: 100%;
+            }
+
+            .quote-text {
+                padding: 60px 40px;
+
+                p {
+
+                    font-family: $heading;
+                    line-height: 1.7;
+                    font-size: 1.25rem;
+                    margin-bottom: 30px;
+                }
+
+                p::before {
+                    content: '\201C';
+                }
+
+                p::after {
+                    content: '\201D';
+                }
+
+                .socials {
+                    display: flex;
+                    font-size: 1.25rem;
+
+                    .social {
+                        height: 30px;
+                        width: 30px;
+                        background-color: $white;
+                        border-radius: 50%;
+                        text-align: center;
+                        line-height: 30px;
+                    }
+
+                    .social:first-child {
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+        }
+
+        .quote-1 {
+            background-color: $orange;
+
+            .social {
+                color: $orange;
+            }
+        }
+
+        .quote-2 {
+            background-color: $light-green;
+            color: $dark-green;
+
+            .socials {
+                .social {
+                    color: $light-green;
+                }
+            }
+
+        }
+
+        .quote-3 {
+            background-color: $black;
+            color: $light-green;
+
+            .socials {
+                .social {
+                    color: $black;
+                }
+            }
+
+        }
+
+    }
 }

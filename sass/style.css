@@ -464,4 +464,73 @@ header nav.active {
   -webkit-transform: translateY(-50%) rotate(45deg);
           transform: translateY(-50%) rotate(45deg);
 }
+
+.grid .quotes .quote img {
+  width: 100%;
+}
+
+.grid .quotes .quote .quote-text {
+  padding: 60px 40px;
+}
+
+.grid .quotes .quote .quote-text p {
+  font-family: "Chonburi", cursive;
+  line-height: 1.7;
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.grid .quotes .quote .quote-text p::before {
+  content: '\201C';
+}
+
+.grid .quotes .quote .quote-text p::after {
+  content: '\201D';
+}
+
+.grid .quotes .quote .quote-text .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.25rem;
+}
+
+.grid .quotes .quote .quote-text .socials .social {
+  height: 30px;
+  width: 30px;
+  background-color: #f5f4ed;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+}
+
+.grid .quotes .quote .quote-text .socials .social:first-child {
+  margin-right: 10px;
+}
+
+.grid .quotes .quote-1 {
+  background-color: #d19a77;
+}
+
+.grid .quotes .quote-1 .social {
+  color: #d19a77;
+}
+
+.grid .quotes .quote-2 {
+  background-color: #bfd9cc;
+  color: #4b787a;
+}
+
+.grid .quotes .quote-2 .socials .social {
+  color: #bfd9cc;
+}
+
+.grid .quotes .quote-3 {
+  background-color: #524c4a;
+  color: #bfd9cc;
+}
+
+.grid .quotes .quote-3 .socials .social {
+  color: #524c4a;
+}
 /*# sourceMappingURL=style.css.map */
